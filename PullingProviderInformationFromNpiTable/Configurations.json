@@ -1,0 +1,99 @@
+{
+   "Claim": {
+      "table_name": "npilookupvalues",
+      "key_field": "npi",
+      "default_pulling_fields": "npi,provider last name (legal name),provider organization name (legal business name)",
+      "types": {
+         "billing_provider": {
+            "key_field_for_claim": "billing_national_provider_id_medical_claims_header",
+            "mapping": {
+               "provider first name": "billing_provider_first_name_medical_claims_header",
+               "provider middle name": "billing_provider_middle_name_medical_claims_header",
+               "provider first line business mailing address": "provider_business_mailing_address_line_1_medical_claims_header",
+               "provider business mailing address city name": "provider_business_mailing_address_city_name_medical_claims_header",
+               "provider business mailing address state name": "provider_business_mailing_address_state_code_medical_claims_header",
+               "provider business mailing address postal code": "provider_business_mailing_address_postal_code_medical_claims_header",
+               "entity type code": "billing_provider_entity_type_code_medical_claims_header"
+            },
+            "conditional_mapping": {
+               "first_name": "billing_provider_first_name_medical_claims_header",
+               "last_name": "billing_provider_last_name_medical_claims_header"
+            }
+         },
+         "attending_provider": {
+            "key_field_for_claim": "attending_national_provider_id_medical_claims_header",
+            "mapping": {
+               "provider first name": "attending_provider_first_name_medical_claims_header",
+               "provider middle name": "attending_provider_middle_name_medical_claims_header",
+               "provider first line business mailing address": "attending_provider_address_line_medical_claims_header",
+               "provider business mailing address city name": "attending_provider_city_name_medical_claims_header",
+               "provider business mailing address state name": "attending_provider_state_code_medical_claims_header",
+               "provider business mailing address postal code": "attending_provider_postal_code_medical_claims_header"
+            },
+            "conditional_mapping": {
+               "first_name": "attending_provider_first_name_medical_claims_header",
+               "last_name": "attending_provider_last_name_medical_claims_header"
+            }
+         },
+         "referring_provider": {
+            "key_field_for_claim": "referring_provider_npi_medical_claims_header",
+            "mapping": {
+               "provider first name": "referring_provider_first_name_medical_claims_header",
+               "provider middle name": "referring_provider_middle_name_medical_claims_header",
+               "provider first line business mailing address": "referring_provider_address_line_medical_claims_header",
+               "provider business mailing address city name": "referring_provider_city_name_medical_claims_header",
+               "provider business mailing address state name": "referring_provider_state_code_medical_claims_header",
+               "provider business mailing address postal code": "referring_provider_postal_code_medical_claims_header"
+            },
+            "conditional_mapping": {
+               "first_name": "referring_provider_first_name_medical_claims_header",
+               "last_name": "referring_provider_last_name_medical_claims_header"
+            }
+         },
+         "rendering_provider": {
+            "key_field_for_claim": "plan_rendering_provider_id_medical_claims_header",
+            "mapping": {
+               "provider first name": "rendering_provider_first_name_medical_claims_header",
+               "provider middle name": "rendering_provider_middle_name_medical_claims_header",
+               "provider first line business mailing address": "rendering_provider_address_line_medical_claims_header",
+               "provider business mailing address city name": "rendering_provider_city_name_medical_claims_header",
+               "provider business mailing address state name": "rendering_provider_state_code_medical_claims_header",
+               "provider business mailing address postal code": "rendering_provider_postal_code_medical_claims_header"
+            },
+            "conditional_mapping": {
+               "first_name": "rendering_provider_first_name_medical_claims_header",
+               "last_name": "rendering_provider_last_name_medical_claims_header"
+            }
+         },
+         "service_provider": {
+            "key_field_for_claim": "service_national_provider_id_medical_claims_header",
+            "mapping": {
+               "provider first name": "service_provider_first_name_medical_claims_header",
+               "provider organization name (legal business name)": "service_provider_last_name_or_organization_name_medical_claims_header",
+               "provider first line business mailing address": "service_provider_street_address_medical_claims_header",
+               "provider business mailing address city name": "service_provider_city_name_medical_claims_header",
+               "provider business mailing address state name": "service_provider_state_code_medical_claims_header",
+               "provider business mailing address postal code": "service_provider_zip_code_medical_claims_header",
+               "entity type code": "service_provider_entity_type_code_medical_claims_header"
+            },
+            "conditional_mapping": {
+            }
+         },
+         "rendering_details_provider": {
+            "key_field_for_claim": "rendering_provider_identification_number_detail_medical_claims_detail",
+            "mapping": {
+               "provider first name": "rendering_provider_first_name_detail_medical_claims_detail",
+               "provider middle name": "rendering_provider_middle_name_detail_medical_claims_detail",
+               "provider first line business mailing address": "rendering_provider_middle_name_detail_medical_claims_detail",
+               "provider business mailing address city name": "rendering_provider_city_name_detail_medical_claims_detail",
+               "provider business mailing address state name": "rendering_provider_state_code_detail_medical_claims_detail",
+               "provider business mailing address postal code": "rendering_provider_postal_code_detail_medical_claims_detail"
+            },
+            "conditional_mapping": {
+               "first_name": "rendering_provider_first_name_detail_medical_claims_detail",
+               "last_name": "rendering_provider_last_name_or_organization_name_detail_medical_claims_detail"
+            }
+         }
+      }
+   }
+}

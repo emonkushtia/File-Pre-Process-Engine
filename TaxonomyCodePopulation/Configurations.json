@@ -1,0 +1,23 @@
+{
+   "Claim": {
+      "npi_taxonomy_map_fields": {
+         "service_provider_taxonomy_code_medical_claims_header": "service_national_provider_id_medical_claims_header",
+         "billing_provider_taxonomy_code_medical_claims_header": "billing_national_provider_id_medical_claims_header",
+         "attending_provider_taxonomy_code_medical_claims_header": "attending_national_provider_id_medical_claims_header",
+         "rendering_provider_taxonomy_code_medical_claims_header": "plan_rendering_provider_id_medical_claims_header"
+      }
+   },
+   "PharmacyClaim": {
+      "npi_taxonomy_map_fields": {
+         "prescribing_provider_primary_taxonomy_code_pharmacy_claims": "prescribing_provider_national_provider_id_pharmacy_claims"
+      },
+      "npi_ncpdp_map_fields": {
+         "ncpdp_pharmacy_id_pharmacy_claims": "pharmacy_national_provider_id_pharmacy_claims"
+      }
+   },
+   "DentalClaim": {
+      "npi_taxonomy_map_fields": {
+         "service_provider_taxonomy_dental_claim_header": "service_provider_npi_dental_claim_header"
+      }
+   }
+}
